@@ -1,4 +1,4 @@
-// Basic test endpoint - we'll add AI straight after!
 export default async (req, res) => {
-  res.json({ message: "Blimey, it works!" });
+  console.log("TEST 1: Function started!");
+  res.json({ working: true, logs: "Check Vercel Runtime logs" });
 };
