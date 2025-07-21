@@ -1,20 +1,5 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "api/draw.js",
-      "use": "@vercel/node",
-      "config": { 
-        "includeFiles": ["api/**"],
-        "maxLambdaSize": "15mb"
-      }
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "api/$1",
-      "methods": ["GET", "POST"]
-    }
-  ]
+  "builds": [{"src": "api/draw.js", "use": "@vercel/node"}],
+  "routes": [{"src": "/api/(.*)", "dest": "api/$1"}]
 }
